@@ -1,0 +1,15 @@
+- name: GitHub
+  url: https://github.com/kdiffin
+  icon: github
+
+- name: Codecademy
+  url: https://www.codecademy.com/profiles/data7743391120
+  icon: codecademy
+
+- name: Leetcode
+  url: https://leetcode.com/u/kdiffin/
+  icon: leetcode
+
+- name: Discord
+  url: https://discord.com/users/593007920417996821
+  icon: discord

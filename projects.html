@@ -1,0 +1,49 @@
+---
+layout: default
+title: Projects
+---
+
+<article class="projects-page">
+    <h1 class="page-title">My Projects</h1>
+
+    <p class="projects-intro">
+        Here are some of my favorite projects I've worked on. Each one represents 
+        a learning experience and a step forward in my development journey.
+    </p>
+
+    <div class="projects-grid">
+        {% for project in site.data.projects %}
+        <div class="project-card-full">
+            {% if project.image %}
+            <div class="project-image">
+                <img src="{{ '/assets/images/' | append: project.image | relative_url }}" alt="{{ project.title }} screenshot">
+            </div>
+            {% else %}
+            <div class="project-image project-image-placeholder">
+                <span>{{ project.title | slice: 0 }}</span>
+            </div>
+            {% endif %}
+            
+            <div class="project-details">
+                <h2 class="project-card-title">{{ project.title }}</h2>
+                
+                <p class="project-description">{{ project.description }}</p>
+                
+                <div class="project-tech-stack">
+                    {% for tech in project.techs %}
+                    <span class="tech-tag">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+                
+                <a href="{{ project.link }}" target="_blank" class="project-link">
+                    View Project
+                    <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+                        <path d="M5.25 12.75L12.75 5.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.25 5.25H12.75V12.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</article>

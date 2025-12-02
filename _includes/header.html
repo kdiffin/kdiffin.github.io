@@ -1,0 +1,13 @@
+<header class="header">
+    <a href="mailto:{{ site.author.email }}" class="email-link">{{ site.author.email }}</a>
+
+    <nav class="nav" role="navigation">
+        <ul class="nav-list">
+            <li><a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+            <li class="nav-separator">/</li>
+            <li><a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url == '/about/' or page.url == '/about' %}active{% endif %}">About</a></li>
+            <li class="nav-separator">/</li>
+            <li><a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url == '/projects/' or page.url == '/projects' %}active{% endif %}">Projects</a></li>
+        </ul>
+    </nav>
+</header>

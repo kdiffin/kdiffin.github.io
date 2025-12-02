@@ -1,0 +1,35 @@
+- title: diffin-dex
+  techs:
+    - Tauri
+    - Desktop App
+    - Next.js
+  link: https://diffindex.vercel.app/
+  image: diffindex.png
+  description: A desktop application built with Tauri and Next.js for managing and exploring data efficiently.
+
+- title: diffin-list
+  techs:
+    - Next.js
+    - Prisma
+    - T3
+  link: https://diffinlist.vercel.app/
+  image: diffinlist.png
+  description: A full-stack todo/list application built with the T3 stack, featuring Prisma ORM for database management.
+
+- title: Bono
+  techs:
+    - Hackathon project
+    - T3
+    - Frontend
+  link: https://bono-one.vercel.app/
+  image: bono.png
+  description: A hackathon project showcasing frontend development skills with the T3 stack.
+
+- title: diffin-chat
+  techs:
+    - React Router
+    - Redux
+    - Firebase
+  link: https://github.com/kdiffin/diffin-chat
+  image: null
+  description: A real-time chat application built with React, Redux for state management, and Firebase for backend services.
