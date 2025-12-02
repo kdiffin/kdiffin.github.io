@@ -9,7 +9,7 @@
     --accent-hover: #ea580c;
     --border-color: #404040;
     --border-hover: #f97316;
-    --max-width: 1400px;
+    --max-width: 1200px;
 }
 
 /* ===== Reset & Base ===== */
@@ -57,7 +57,7 @@ img {
 /* ===== Layout ===== */
 main {
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 0 0;
     padding: 0 2.5rem 4rem;
     flex: 1;
     display: flex;
