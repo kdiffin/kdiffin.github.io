@@ -1,0 +1,29 @@
+# Site settings
+title: kdiffin - Portfolio
+description: Azerbaijani dev with over 2 years of web experience
+baseurl: ""
+url: ""
+
+# Author
+author:
+  name: kdiffin
+  email: ibra.davud@gmail.com
+
+# Social links
+github_url: https://github.com/kdiffin
+codecademy_url: https://www.codecademy.com/profiles/data7743391120
+repo_url: https://github.com/kdiffin/info-sys-portfolio-proj
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - old_portfolio
+  - "*.pdf"
