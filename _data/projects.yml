@@ -16,14 +16,14 @@
   image: diffinlist.png
   description: A full-stack todo/list application built with the T3 stack, featuring Prisma ORM for database management.
 
-- title: Bono
+- title: SwagTask
   techs:
-    - Hackathon project
-    - T3
-    - Frontend
-  link: https://bono-one.vercel.app/
-  image: bono.png
-  description: A hackathon project showcasing frontend development skills with the T3 stack.
+    - Go
+    - HTMX
+    - WebSockets
+  link: https://swagtask.fly.dev/
+  image: swagtask.png
+  description: A task management app built with zero dependencies - no frameworks, no build step, just Go stdlib and HTMX. Features hand-rolled pub-sub, websockets, and follows HATEOAS principles.
 
 - title: diffin-chat
   techs:
