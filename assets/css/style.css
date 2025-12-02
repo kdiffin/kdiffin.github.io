@@ -57,7 +57,8 @@ img {
 /* ===== Layout ===== */
 main {
     max-width: var(--max-width);
-    margin: 0 0;
+    margin: 0 auto;
+    width: 100%;
     padding: 0 2.5rem 4rem;
     flex: 1;
     display: flex;
@@ -307,6 +308,7 @@ main {
 .about-page,
 .projects-page {
     display: flex;
+    max-width: 800px;
     flex-direction: column;
     gap: 2rem;
 }
@@ -403,7 +405,6 @@ main {
 
 .project-image {
     width: 100%;
-    height: 200px;
     overflow: hidden;
     background-color: var(--bg-primary);
 }
