@@ -1,3 +1,5 @@
+# this isn't my actual portfolio yet for anyone visiting my profile, my real profile is at github.com/kdiffin/portofolioreal, this is mostly claude opus 4.5 slop
+
 # kdiffin Portfolio
 
 A personal portfolio website built with Jekyll.
