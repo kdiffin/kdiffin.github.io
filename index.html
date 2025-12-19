@@ -52,12 +52,40 @@ title: Home
         <h2 class="section-title">GitHub Activity</h2>
     </header>
 
-    <div class="heatmap-card">
-        <a href="https://github.com/kdiffin" target="_blank" rel="noopener noreferrer" title="View GitHub profile">
+    <div class="heatmap-card" role="region" aria-label="GitHub activity">
+        <button class="heatmap-preview" aria-label="Open GitHub heatmap">
             <img src="https://ghchart.rshah.org/kdiffin" alt="GitHub contributions chart for kdiffin" class="github-heatmap">
-        </a>
+            <div class="heatmap-overlay">
+                <span>View full activity</span>
+            </div>
+        </button>
         <p class="heatmap-note">If the chart doesn't load, visit <a href="https://github.com/kdiffin" target="_blank" rel="noopener noreferrer">my GitHub profile</a> to view activity.</p>
     </div>
+
+    <!-- Modal -->
+    <div class="heatmap-modal" id="heatmapModal" aria-hidden="true">
+        <div class="heatmap-modal-content" role="dialog" aria-modal="true" aria-label="GitHub heatmap dialog">
+            <button class="heatmap-modal-close" aria-label="Close">✕</button>
+            <img src="https://ghchart.rshah.org/kdiffin" alt="Full-size GitHub contributions chart for kdiffin" class="heatmap-modal-image">
+            <a href="https://github.com/kdiffin" target="_blank" rel="noopener noreferrer" class="heatmap-modal-profile">Open GitHub profile</a>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const openBtn = document.querySelector('.heatmap-preview');
+      const modal = document.getElementById('heatmapModal');
+      const closeBtn = modal.querySelector('.heatmap-modal-close');
+
+      openBtn.addEventListener('click', function(){ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); });
+      closeBtn.addEventListener('click', function(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); });
+      modal.addEventListener('click', function(e){ if(e.target === modal) { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); } });
+
+      // Allow ESC to close
+      document.addEventListener('keydown', function(e){ if(e.key === 'Escape') { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); } });
+    });
+    </script>
+
 </article>
 
 <article class="posts-section">
