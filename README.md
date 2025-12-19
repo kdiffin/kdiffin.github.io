@@ -1,8 +1,9 @@
-# this isn't my actual portfolio yet for anyone visiting my profile, my real profile is at github.com/kdiffin/portofolioreal, this is mostly claude opus 4.5 slop
 
-# kdiffin Portfolio
+# hi instructor
+I took the design from my old portfolio, as seen in the code in old_portfolio
 
-A personal portfolio website built with Jekyll.
+disclaimer for ppl viewing my github:
+this isn't my actual portfolio yet for anyone visiting my profile, my real profile is at github.com/kdiffin/portofolioreal
 
 ## Structure
 
