@@ -33,3 +33,11 @@
   link: https://github.com/kdiffin/diffin-chat
   image: null
   description: A real-time chat application built with React, Redux for state management, and Firebase for backend services.
+
+- title: How do Logic Gates Work?
+  techs:
+    - Breadboards
+    - Transistors
+  link: https://www.youtube.com/watch?v=g2atlYtcfGo
+  image: logicgates.jpg
+  description: Building AND, OR, NOT and NAND gates using breadboards and transistors.
